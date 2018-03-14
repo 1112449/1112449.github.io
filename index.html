@@ -25,6 +25,30 @@ mixpanel.init("418ad84abddd9fc2317e6e1aa92169f9");</script><!-- end Mixpanel -->
 		}
 	);
 </script>
+	
+	<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId            : '2053569074917157',
+      autoLogAppEvents : true,
+      xfbml            : true,
+      version          : 'v2.12'
+    });
+  };
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "https://connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
+<div class="fb-customerchat"
+  page_id="406643469766251"
+  logged_in_greeting="Have a great day!"
+  logged_out_greeting="Have a great day!"
+>
+</div>
 
 </head>
 <body>
